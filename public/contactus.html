@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/footnav.css">
+    <style>
+        .contactus {
+            background-color: #176dd7b5;
+            width: 450px;
+            display: flex;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 50px;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            margin: 50px;
+            margin-left: 250px;
+            color: rgb(14, 14, 14);
+
+        }
+
+        .us {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        img {
+            border-radius: 50px;
+            margin-top: 50px;
+            height: 210px;
+            box-shadow: 2px 2px 2px rgb(15, 15, 15);
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="head">ND Institute And Technology</h3>
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>User Login</h2>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="register">
+        <div class="modal-dialog modal-dialog-c">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>User Register</h2>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>Confirm Password</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Name</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>Last Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Sign In</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" data-bs-target="#navItems" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav b">
+
+                    <li class="nav-item"><a class="nav-link" href="../public/assignment.html"><span
+                                class="bi bi-house-fill"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../public/about.html"><span
+                                class="bi bi-question-circle"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../public/services.html"><span
+                                class="bi bi-question-circle"></span>
+                            Service</a></li>
+                    <li class="nav-item a"><a class="nav-link"><span class="bi bi-phone"></span> Contact
+                            us</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <button data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle">
+                            <span class="bi bi-box-arrow-right"></span> Sign in
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item" data-bs-target="#login" data-bs-toggle="modal"><span
+                                    class="bi bi-box-arrow-right"></span>&nbsp;<a href="#" class="dropdown-text">Sign
+                                    in</a></li>
+                            <li class="dropdown-item " data-bs-target="#register" data-bs-toggle="modal"><span
+                                    class="bi bi-person-plus-fill"></span>&nbsp;<a href="#" class="dropdown-text">Sign
+                                    up</a></li>
+                            <li class="dropdown-item "><span class="bi bi-unlock-fill"></span>&nbsp;<a href="#"
+                                    class="dropdown-text">Change
+                                    Password</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item">
+                                <span class="bi bi-question-circle"></span> Help
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="us">
+        <div class="contactus" id="contact">
+            <ul>
+                <h2>ContactUs</h2>
+
+                <li>Name : Naresh Istitute </li>
+                <li> Email : info@nareshit.com</li>
+                <li>Contact : +91-xxxxxxxxxx</li>
+                <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+            </ul>
+        </div>
+        <div>
+            <img src="../public/img/contactus3.jpg" width="400px">
+        </div>
+    </div>
+
+    <div class="job3">
+        <h3>Naresh Technologies</h3>
+        <div class="footer3">
+            <ul>
+
+                <li><span class="bi bi-facebook"></span> Facebook </li>
+                <li><i class="bi bi-envelope"></i> Google </li>
+                <li><i class="bi bi-twitter"></i> Twitter</li>
+                <li><i class="bi bi-youtube"></i>Youtube</li>
+
+
+            </ul>
+            <ul>
+
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+
+                <li>Name : Naresh Istitute </li>
+                <li> Email : info@nareshit.com</li>
+                <li>Contact : +91-xxxxxxxxxx</li>
+                <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function CalculateClick() {
+            var age = parseInt(document.getElementById("txtage").value);
+            var height = parseInt(document.getElementById("optheight").value) / 100;
+            var weight = parseInt(document.getElementById("optweight").value);
+            var bmi = weight / (height * height);
+            var msg = document.getElementById("msg");
+            document.getElementById("result").innerHTML = `BMI Value :  ${bmi.toFixed(2)}`;
+            if (bmi > 18 < 25) {
+                msg.innerHTML = "Your healthy..";
+                msg.style.color = "green";
+            }
+            if (bmi > 25) {
+                msg.innerHTML = "Not healthy...Over Weight";
+                msg.style.color = "red";
+            }
+            if (bmi < 18) {
+                msg.innerHTML = "Not Healthy...Under Weight";
+                msg.style.color = "yellow";
+            }
+        }
+        function ClearClick() {
+            parseInt(document.getElementById("txtage").value = "");
+            parseInt(document.getElementById("optheight").value = "");
+            parseInt(document.getElementById("optweight").value = "");
+            document.getElementById("result").innerHTML = `BMI Value : `;
+            msg.innerHTML = "";
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+
+    <div class="card w-25 p-4 bg-secondary text-center" style="margin-left: 550px; margin-top: 150px;">
+        <h2>BMI CALCULATOR</h2>
+        <div class="row">
+            <div class="col">
+                <div class="input-group">
+                    <span class="input-group-text">Age:</span>
+                    <input type="number" min="2" max="120" class="form-control" id="txtage">
+                    <span class="input-group-text">ages: 2 - 120</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="input-group mt-3">
+                    <span class="input-group-text">Gender</span>
+                    <input type="radio" name="Gender" id="optgender" class="ms-4 form-check">
+                    <span> Male</span>
+                    <input type="radio" name="Gender" id="optgender" class="ms-4 form-check">
+                    <span> Female</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="input-group mt-3">
+                    <span class="input-group-text">Height</span>
+                    <input type="number" class="form-control" id="optheight">
+                    <span class="input-group-text">In cm</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="input-group mt-3">
+                    <span class="input-group-text">Weight</span>
+                    <input type="number" class="form-control" id="optweight">
+                    <span class="input-group-text">In KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="btn btn-success mt-4" onclick="CalculateClick()">Calculate</button>
+            <button class="btn btn-danger mt-4" onclick="ClearClick()">Clear</button>
+        </div>
+    </div>
+
+
+    <div class="text-center bg-secondary text-white p-2 mt-4">
+        <h1 id="result"></h1>
+        <h2 id="msg"></h2>
+    </div>
+
+
+
+</body>
+
+</html>

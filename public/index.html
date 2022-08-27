@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+    integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../style.css">
+  <title>My Portfolio</title>
+
+</head>
+
+<body>
+  <div class="container-fluid" id="home">
+    <div class="container">
+      <div class="navbar">
+        <img class="logo" src="logo2.webp">
+        <nav>
+          <ul id="menuList">
+            <li> <a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#myworks">My Work</a></li>
+            <li><a href="#myskill">My Skills</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <img src="bars-solid.svg" onclick="toggleMenu()" class="menu">
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h4>
+            Hi There!
+          </h4>
+          <h1>I am Sanjay <br> <span>A Web Developer</span></h1>
+          <button class="btn btn-primary">Download CV</button>
+        </div>
+        <div class="col-2">
+          <img class="controller" src="code-and-headphones-1.avif">
+        </div>
+      </div>
+      <div class="ico text-center">
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-linkedin"></span>
+        <span class="bi bi-github"></span>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="abou d-flex justify-content-between mt-5">
+      <div class="pers">
+        <img src="my2.jpg" height="300px">
+      </div>
+      <div id="about" class="info me-5 ms-5">
+        <h1 class="text-center">About <span class="text">Me</span></h1>
+        <h3 class="text-center m-3">Hello! I'am Sanjay T.</h3>
+        <p class="w-90">
+          Thanks for your interest, here
+          is a quick story of me and this
+          website.
+          I do my work mainly in <span>HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript</span>. HTML and CSS
+          are my stronger section.
+          Besides these I know Back end web development.
+          This website is basically one of my
+          Web Development project which is
+          built using HTML only.
+          Here one can also find ideas for
+          projects in different languages.
+
+          Thanks again for reading this,
+          because of people like you, it
+          exists and prospers!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="main text-black ">
+    <div id="myskill" class="skill">
+      <h2 class=" text-center">My Skills</h2>
+      <li>
+        <h1>HTML</h1><span class="bar"><span class="html"></span>90%</span>
+      </li>
+      <li>
+        <h1>CSS</h1><span class="bar"><span class="css"></span>75%</span>
+      </li>
+      <li>
+        <h1>JQuery</h1><span class="bar"><span class="jquery"></span></span>
+      </li>
+      <li>
+        <h1>JavaScript </h1><span class="bar"><span class="javascript"></span></span>
+      </li>
+      <li>
+        <h1>Bootstrap </h1><span class="bar"><span class="bootstrap"></span></span>
+      </li>
+      <li>
+        <h1>MongoDB</h1><span class="bar"><span class="mongodb"></span></span>
+      </li>
+      <li>
+        <h1>NodeJS</h1><span class="bar"><span class="nodejs"></span></span>
+      </li>
+    </div>
+  </div>
+
+  <div class="contact-bg">
+    <h1 class="text-warning text-center p-4">Contact Me</h1>
+    <div id="contact" class="contact">
+
+      <h1 class="text-primary">Form</h1>
+      <form class="textme">
+        <li><input class="form-control" type="text" placeholder="Name"></li>
+        <li><input class="form-control" type=" email" placeholder="Email Adress"></li>
+        <li><input class="form-control " type=" text" placeholder="Subject"></li>
+        <li><input class="form-control msg" type=" text" placeholder="Your Message"></li>
+        <button class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="myworks" id="myworks">
+    <h1>My Work</h1>
+    <div class="row">
+      <div class="col-4"><a href="bmi-calculator.html" target="_blank"><img class="im" src="BMI Calci.png"></a>
+      </div>
+      <div class="col-4"><a href="tailwind.html" target="_blank"><img class="im" src="count.png"></a>
+      </div>
+      <div class="col-4"><a href="hotel-registration-form.html" target="_blank"><img class="im" src="hotel.png"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4"><a href="calci.html" target="_blank"><img class="im" src="calci.png"></a>
+      </div>
+      <div class="col-4"><a href="assignment.html" target="_blank"><img class="im" src="inst.png"></a>
+      </div>
+      <div class="col-4"><a href="api-request.html" target="_blank"><img class="im" src="api.png"></a>
+      </div>
+    </div>
+  </div>
+  <a class="button" href="#home"><button class="btn btn-primary"><i class="bi bi-arrow-up"></i>
+    </button></a>
+
+  <footer class="foot">
+    <div>
+      <a class=" insta" href=" #"><i class="bi bi-instagram"></i></a>
+      <a class="fb" href="#"><i class="bi bi-facebook"></i></a>
+      <a class="git" href="#"><i class="bi bi-linkedin"></i></a>
+      <a class="in" href="#"><i class="bi bi-github"></i></a>
+    </div>
+    <p>
+      Copyright @2022 Name R & D Template All Right Reserved
+    </p>
+  </footer>
+
+
+</body>
+<script>
+  var menuList = document.getElementById("menuList");
+  menuList.style.maxHeight = "0px";
+
+  function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
+      menuList.style.maxHeight = "140px";
+    } else {
+      menuList.style.maxHeight = "0px";
+    }
+  } 
+</script>
+
+</html>

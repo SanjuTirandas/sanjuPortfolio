@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <title>CountDown</title>
+</head>
+<script>
+    let x = setInterval(function () {
+        let target = new Date("Aug 11,2023 10:00:00");
+        let now = new Date().getTime();
+
+        let diff = target - now;
+
+
+
+        let day = Math.floor(diff / (60 * 60 * 24 * 1000));
+        let hour = Math.floor((diff % (60 * 60 * 24 * 1000)) / (60 * 60 * 1000));
+        let minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+        let seconds = Math.floor((diff % (60 * 1000)) / (1000));
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        day = day < 10 ? "0" + day : day;
+        hour = hour < 10 ? "0" + hour : hour;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+
+
+        document.getElementById("demo").innerHTML = day + ' d, ' + hour + ' HRs: ' + minutes + ' : ' + seconds + ' S'
+    }, 1000)
+</script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+
+
+<body>
+    <ul class="bg-purple-600 flex py-4">
+        <li
+            class="text-white px-28 text-xl hover:bg-white hover:text-black rounded-2xl hover:cursor-pointer bi bi-house-fill">
+            Home</li>
+        <li class="text-white px-28 text-xl hover:bg-white hover:text-black rounded-2xl hover:cursor-pointer">
+            About us
+        </li>
+        <li class="text-white px-28 text-xl hover:bg-white hover:text-black rounded-2xl hover:cursor-pointer">
+            Contact
+            us</li>
+        <li class="text-white px-28 text-xl hover:bg-white hover:text-black rounded-2xl hover:cursor-pointer">
+            search
+        </li>
+        <li class="text-white px-28 text-xl hover:bg-white hover:text-black rounded-2xl hover:cursor-pointer">
+            Login
+        </li>
+    </ul>
+    <div class="mx-auto my-5 py-24 text-center justify-center text-7xl bg-red-500 w-2/3 h-80 align-middle" id="demo">
+    </div>
+
+</body>
+
+</html>

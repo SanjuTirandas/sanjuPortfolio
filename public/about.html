@@ -1,0 +1,575 @@
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/footnav.css">
+    <link rel="stylesheet" href="../public/search.css">
+
+    <style>
+        table {
+            width: 1200px;
+            margin-top: 20px;
+
+        }
+
+
+
+        tr {
+            text-align: center;
+        }
+
+        .z {
+            margin-bottom: 10px;
+            margin-left: 600px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h3 class="head">ND Institute And Technology</h3>
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>User Login</h2>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="register">
+        <div class="modal-dialog modal-dialog-c">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>User Register</h2>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>Confirm Password</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Name</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>Last Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Sign In</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" data-bs-target="#navItems" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav b">
+
+                    <li class="nav-item"><a class="nav-link" href="../public/assignment.html"><span
+                                class="bi bi-house-fill"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link"><span class="bi bi-question-circle"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../public/services.html"><span
+                                class="bi bi-question-circle"></span>
+                            Service</a></li>
+                    <li class="nav-item a"><a class="nav-link" href="../public/contactus.html"><span
+                                class="bi bi-phone"></span> Contact
+                            us</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <button data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle">
+                            <span class="bi bi-box-arrow-right"></span> Sign in
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item" data-bs-target="#login" data-bs-toggle="modal"><span
+                                    class="bi bi-box-arrow-right"></span>&nbsp;<a href="#" class="dropdown-text">Sign
+                                    in</a></li>
+                            <li class="dropdown-item " data-bs-target="#register" data-bs-toggle="modal"><span
+                                    class="bi bi-person-plus-fill"></span>&nbsp;<a href="#" class="dropdown-text">Sign
+                                    up</a></li>
+                            <li class="dropdown-item "><span class="bi bi-unlock-fill"></span>&nbsp;<a href="#"
+                                    class="dropdown-text">Change
+                                    Password</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item">
+                                <span class="bi bi-question-circle"></span> Help
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="modal fade" id="View">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Details:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <dl class="row">
+                            <dt class="col-4">Course:</dt>
+                            <dd class="col-5">Angular 8</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Faculty Name:</dt>
+                            <dd class="col-5">Sudhakar Sharma Sir</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Timing:</dt>
+                            <dd class="col-5">07:30 AM</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Duration:</dt>
+                            <dd class="col-5">45 Days</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Description:</dt>
+                            <dd class="col-8">Angular 8 is a client-side TypeScript based framework which is used to
+                                create dynamic web applications. It is very
+                                similar to its previous versions except having some extensive features.</dd>
+                        </dl>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-danger">Close</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div>
+        <div class="modal fade" id="View1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Details:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <dl class="row">
+                            <dt class="col-4">Course:</dt>
+                            <dd class="col-5">Nodejs</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Faculty Name:</dt>
+                            <dd class="col-5">Samba Sir</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Timing:</dt>
+                            <dd class="col-5">09:00 AM</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Duration:</dt>
+                            <dd class="col-5">45 Days</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Description:</dt>
+                            <dd class="col-8">Node.js connects the ease of a scripting language (JavaScript) with the
+                                power of Unix network programming. Node.js was
+                                built on the Google V8 JavaScript engine since it was open-sourced under the BSD
+                                license.</dd>
+                        </dl>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-danger">Close</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div>
+        <div class="modal fade" id="View2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Details:</h3>
+                    </div>
+                    <div class="modal-body">
+                        <dl class="row">
+                            <dt class="col-4">Course:</dt>
+                            <dd class="col-5">Java</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Faculty Name:</dt>
+                            <dd class="col-5">Phani Krishna Sir</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Timing:</dt>
+                            <dd class="col-5">04:00 AM</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Duration:</dt>
+                            <dd class="col-5">60 Days</dd>
+                        </dl>
+                        <dl class="row">
+                            <dt class="col-4">Description:</dt>
+                            <dd class="col-8">Java is an object-oriented programming language developed by Sun
+                                Microsystems, and it was released in 1995. ... Java
+                                Virtual Machine (JVM) executes Java code, but it has been written in platform-specific
+                                languages such as C/C++/ASM, etc.</dd>
+                        </dl>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-bs-dismiss="modal" class="btn btn-danger">Close</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="modal fade" id="View3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Details:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <dl class="row">
+                                <dt class="col-4">Course:</dt>
+                                <dd class="col-5">Data Science And AI</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Faculty Name:</dt>
+                                <dd class="col-5">Mr.Prakash Senapati sir</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Timing:</dt>
+                                <dd class="col-5">06:00 PM</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Duration:</dt>
+                                <dd class="col-5">60 Days</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Description:</dt>
+                                <dd class="col-8">A data scientist's duties can include developing strategies for
+                                    analyzing data, preparing data for analysis, exploring,
+                                    analyzing, and visualizing data, building models with data using programming
+                                    languages, such as Python and R, and
+                                    deploying models into applications.</dd>
+                            </dl>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button data-bs-dismiss="modal" class="btn btn-danger">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div class="modal fade" id="View4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Details:</h3>
+                        </div>
+                        <div class="modal-body">
+                            <dl class="row">
+                                <dt class="col-4">Course:</dt>
+                                <dd class="col-5">Selenium</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Faculty Name:</dt>
+                                <dd class="col-5">Mr.Hari Krishna Sir</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Timing:</dt>
+                                <dd class="col-5">06:00 PM</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Duration:</dt>
+                                <dd class="col-5">45 Days</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-4">Description:</dt>
+                                <dd class="col-8">Selenium it is an automatic testing web-based application.
+                                    Here we learn writing test cases,use cases, Selenium web
+                                    driver API, selenium IDE, Usage of selenium.Attend demo of Selenium
+                                    Training by Expert.</dd>
+                            </dl>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button data-bs-dismiss="modal" class="btn btn-danger">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <div>
+            <div>
+                <div class="modal fade" id="View5">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Details:</h3>
+                            </div>
+                            <div class="modal-body">
+                                <dl class="row">
+                                    <dt class="col-4">Course:</dt>
+                                    <dd class="col-5">UI Fullstack Development</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt class="col-4">Faculty Name:</dt>
+                                    <dd class="col-5">Mr.Sudhakar Sharma Sir</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt class="col-4">Timing:</dt>
+                                    <dd class="col-5">06:00 PM</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt class="col-4">Duration:</dt>
+                                    <dd class="col-5">100 Days</dd>
+                                </dl>
+                                <dl class="row">
+                                    <dt class="col-4">Description:</dt>
+                                    <dd class="col-8">A full stack developer is someone who works with
+                                        both the front end and back end of a web application. The front
+                                        end is
+                                        responsible for the visual look and feel of the website, while
+                                        back end is responsible for the behind the scenes logic
+                                        and infrastructure of the site.</dd>
+                                </dl>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button data-bs-dismiss="modal" class="btn btn-danger">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="flexbox">
+
+            <div class="search">
+                <h2>Details </h2>
+                <div>
+                    <i class="lni lni-search"></i>
+                    <input type="text" id="myInput" placeholder="Search..." onkeyup="searchFun()">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <table border=1 id="myTable" class="table table-hover">
+                <tr style="background-color:#C2C2A3">
+                    <th>No.</th>
+                    <th>Course Name</th>
+                    <th>Faculty Name</th>
+                    <th>Duration</th>
+                    <th>Timing</th>
+                    <th>View</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Angular 8
+                    </td>
+                    <td>Mr.Sudhakar sharma sir</td>
+                    <td>45 days</td>
+                    <td>07:30 AM</td>
+                    <td>
+                        <button data-bs-target="#View" data-bs-toggle="modal" class="btn btn-warning btn-sm">View
+                            <span class="bi bi-eye-fill"></span></button>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Node Js
+                    </td>
+                    <td>Mr.Samba sir</td>
+                    <td>45 days</td>
+                    <td>9:00 AM</td>
+                    <td>
+                        <button data-bs-target="#View1" data-bs-toggle="modal" class="btn btn-warning btn-sm">View
+                            <span class="bi bi-eye-fill"></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        Java
+                    </td>
+                    <td>Hari krishna sir</td>
+                    <td>60 days</td>
+                    <td>4:30 PM</td>
+                    <td>
+                        <button data-bs-target="#View2" data-bs-toggle="modal" class="btn btn-warning btn-sm">View
+                            <span class="bi bi-eye-fill"></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        Data Science And AI
+                    </td>
+                    <td>Mr.Prakash Senapati sir</td>
+                    <td>60 days</td>
+                    <td>6:00 PM</td>
+                    <td>
+                        <button data-bs-target="#View3" data-bs-toggle="modal" class="btn btn-warning btn-sm">View
+                            <span class="bi bi-eye-fill"></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        Selenium
+                    </td>
+                    <td>Mr.Hari Krishna Sir</td>
+                    <td>45 days</td>
+                    <td>6:00 PM</td>
+                    <td>
+                        <button data-bs-target="#View4" data-bs-toggle="modal" class="btn btn-warning btn-sm">View
+                            <span class="bi bi-eye-fill"></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        UI Fullstack Development
+                    </td>
+                    <td>Mr.Sudhakar Sharma</td>
+                    <td>100 days</td>
+                    <td>6:00 PM</td>
+                    <td>
+                        <button data-bs-target="#View5" data-bs-toggle="modal" class="btn btn-warning btn-sm">View
+                            <span class="bi bi-eye-fill"></span></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+    </div>
+    <div class="job3">
+        <h3>Naresh Technologies</h3>
+        <div class="footer3">
+            <ul>
+
+                <li><span class="bi bi-facebook"></span> Facebook </li>
+                <li><i class="bi bi-envelope"></i> Google </li>
+                <li><i class="bi bi-twitter"></i> Twitter</li>
+                <li><i class="bi bi-youtube"></i>Youtube</li>
+
+
+            </ul>
+            <ul>
+
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+
+                <li>Name : Naresh Istitute </li>
+                <li> Email : info@nareshit.com</li>
+                <li>Contact : +91-xxxxxxxxxx</li>
+                <li>Address : Sr nagar, Hyderabad, Telangana, India</li>
+            </ul>
+
+        </div>
+
+
+
+
+
+
+    </div>
+    <script>
+        function searchFun() {
+            // Declare variables
+
+            let filter = document.getElementById("myInput").value.toUpperCase();
+
+
+            let table = document.getElementById("myTable");
+            let tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (var i = 0; i < tr.length; i++) {
+                let td = tr[i].getElementsByTagName("td")[1];
+
+                if (td) {
+                    let textvalue = td.textContent || td.innerHTML;
+                    if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+
+                }
+            }
+        } 
+    </script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+ .a {
+     padding-right: 950px;
+ }
+
+ .b {
+     padding-left: 20px;
+ }
+
+ nav {
+     margin-top: 25px;
+     margin: 10px;
+ }
+
+ .head {
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     margin: 50px;
+ }
+
+ section {
+     margin-top: 20px;
+ }
+
+ .job3 {
+     background-color: #404040;
+     text-align: center;
+     padding-top: 40px;
+     padding-bottom: 10px;
+     margin-top: 50px;
+     color: white;
+
+     opacity: 1;
+ }
+
+ .job3:hover {
+     cursor: pointer;
+     text-shadow: 2px 2px 2px white;
+
+ }
+
+ .footer3 {
+     margin: 20px;
+     display: grid;
+     grid-template-columns: 4fr 4fr 4fr;
+ }
+
+ .footer3 li {
+     list-style: none;
+     line-height: 2;
+ }
